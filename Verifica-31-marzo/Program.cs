@@ -17,11 +17,12 @@ namespace Verifica_31_marzo
         {
             Thread t1 = new Thread(new ThreadStart(Somma));
             Thread t2 = new Thread(new ThreadStart(StampareAVideoTabellina));
-            Threa
+            Thread t3 = new Thread(new ThreadStart(StampaAVideoStringa));
 
+           
         }
 
-        public static void Somma()
+        private  static void Somma()
         {
             int add1 = 10;
             int add2 = 20;
@@ -34,7 +35,7 @@ namespace Verifica_31_marzo
 
         }
 
-        public static void StampareAVideoTabellina()
+        private  static void StampareAVideoTabellina()
         {
             int numero = 70;
             for(int i = 1; i < 11; i++)
@@ -42,5 +43,15 @@ namespace Verifica_31_marzo
                 Console.WriteLine(numero * i);
             }
         }
+
+        private static void StampaAVideoStringa()
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Siamo nell'anno 202" + i);
+            }
+        }
+
+
     }
 }
