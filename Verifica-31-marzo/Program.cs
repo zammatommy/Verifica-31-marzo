@@ -17,6 +17,7 @@ namespace Verifica_31_marzo
         {
             Thread t1 = new Thread(new ThreadStart(Somma));
             Thread t2 = new Thread(new ThreadStart(StampareAVideoTabellina));
+            Threa
 
         }
 
@@ -35,7 +36,11 @@ namespace Verifica_31_marzo
 
         public static void StampareAVideoTabellina()
         {
-
+            int numero = 70;
+            for(int i = 1; i < 11; i++)
+            {
+                Console.WriteLine(numero * i);
+            }
         }
     }
 }
